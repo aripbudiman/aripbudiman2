@@ -1,0 +1,53 @@
+.app{
+    @apply mx-auto w-full max-w-5xl bg-gray-200
+  }
+.home{
+    @apply grid grid-cols-2 content-center items-center gap-x-5 w-full
+  }
+
+.home .home-left{
+    @apply w-full
+  }
+
+.home .home-left h2{
+  @apply font-bold text-xl
+}
+
+.home  .home-left h1{
+  @apply text-xl font-semibold text-error
+}
+
+.home .home-left h3{
+  @apply text-4xl font-bold
+}
+
+.home .home-left p{
+  @apply my-2 text-justify text-lg
+}
+
+.home .home-right{
+  @apply w-full  flex justify-center
+}
+.home .home-right img{
+    @apply max-w-sm
+  }
+
+
+.about{
+  @apply grid grid-cols-2 gap-x-5 content-center items-center
+}
+
+.about .left{
+@apply  flex justify-center items-center
+}
+
+.about .left img{
+  @apply max-w-sm
+}
+
+.about .right{
+  @apply py-10 pl-5
+}
+.about .right h1{
+  @apply text-4xl font-semibold
+}
