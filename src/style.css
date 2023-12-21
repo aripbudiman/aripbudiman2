@@ -51,3 +51,15 @@
 .about .right h1{
   @apply text-4xl font-semibold
 }
+
+#services h1{
+  @apply text-center text-4xl font-semibold mb-7
+}
+
+#services p{
+  @apply text-lg text-justify mb-5
+}
+
+#services {
+  @apply py-14
+}

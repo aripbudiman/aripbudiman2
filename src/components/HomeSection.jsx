@@ -16,7 +16,7 @@ export default function HomeSection() {
     var encodedMessage = encodeURIComponent(message);
     var description = 'Muhamad Arip Budiman';
     return (
-        <div className='bg-base-100 home'>
+        <div id='home' className='bg-base-100 home'>
             <div className='home-left'>
                 <h2>Hi I am</h2>
                 <h1>Muhamad Arip Budiman</h1>

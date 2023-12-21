@@ -2,12 +2,12 @@ import React from 'react'
 import Progress from './atoms/Progress'
 export default function About() {
     return (
-        <div className='about bg-base-100'>
+        <div id='about' className='about bg-base-100'>
             <div className="left">
                 <img src="arip2.png" alt="aripbudiman2.png" />
             </div>
             <div className="right">
-                <h1>About me</h1>
+                <h1>About Me</h1>
                 <p className='mb-3'>Berikut beberapa skill yang dimiliki:</p>
                 <Progress value={78} label="Javascript" />
                 <Progress value={85} label="PHP" />
