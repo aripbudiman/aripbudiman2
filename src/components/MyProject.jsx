@@ -4,8 +4,8 @@ export default function MyProject() {
     return (
         <div id='projects' className='bg-base-100'>
             <h1 className='text-4xl font-semibold text-center mb-5'>My Project</h1>
-            <p className='text-center text-lg mb-5'>Beberapa project yang pernah saya buat dan saya jual ke beberapa client. Berikut projectnya:</p>
-            <div className='grid grid-cols-3 gap-8 pt-5 pb-14'>
+            <p className='text-center text-lg mb-5 px-5 xl:px-0'>Beberapa project yang pernah saya buat dan saya jual ke beberapa client. Berikut projectnya:</p>
+            <div className='grid grid-cols-1 xl:grid-cols-3 px-5 gap-8 pt-5 pb-14'>
                 <CardProject src="/project/dmp1.png">
                     <CardProject.Title>DMPrinting</CardProject.Title>
                     <p className='text-justify'>Project yg saya buat menggunakan CI4, aplikasi ini mengelola pemesanan dan transaksi digital printing. masih beroperasi oleh perusahan DMPRINTING.</p>

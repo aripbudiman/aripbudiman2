@@ -4,7 +4,7 @@ export default function CardProject({ children, src }) {
     return (
         <div className="card bg-base-200 hover:shadow-lg p-1">
             <figure>
-                <img className='h-56 object-scale-down' src={src} alt="project" />
+                <img className='h-52 object-scale-down' src={src} alt="project" />
             </figure>
             <div className="card-body">
                 <Title />

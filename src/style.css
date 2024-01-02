@@ -1,12 +1,15 @@
 .app{
     @apply mx-auto w-full max-w-5xl bg-gray-200
   }
+/* .home{
+    @apply grid grid-cols-1 px-5 xl:grid-cols-2 content-center items-center gap-x-5 w-full
+  } */
 .home{
-    @apply grid grid-cols-2 content-center items-center gap-x-5 w-full
-  }
+  @apply flex items-center justify-center flex-col-reverse xl:flex-row
+}
 
 .home .home-left{
-    @apply w-full
+    @apply w-full px-5
   }
 
 .home .home-left h2{
@@ -34,7 +37,7 @@
 
 
 .about{
-  @apply grid grid-cols-2 gap-x-5 content-center items-center
+  @apply grid grid-cols-1 xl:grid-cols-2 gap-x-5 content-center items-center
 }
 
 .about .left{
@@ -62,4 +65,36 @@
 
 #services {
   @apply py-14
+}
+
+body {
+  --black: #111111;
+  --white: #fdfdfd;
+  --green: #22cc88;
+  --blue: #0055ff;
+  --purple: #8855ff;
+  --red: #ff0055;
+  --orange: #ee4444;
+  --yellow: #ffbe00;
+  --mustard: #ffaa00;
+  --background: var(--white);
+  --accent: var(--black);
+
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--accent);
+}
+
+
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: var(--yellow);
+  z-index: 10000;
+  transform-origin: 0%;
 }
