@@ -8,6 +8,7 @@ export default function Navbar() {
         link.download = "cv-aripbudiman.jpg"; // Nama file yang akan diunduh
         link.click();
     };
+
     return (
         <div className="navbar bg-base-100">
             <div className="navbar-start">

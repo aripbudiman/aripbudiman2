@@ -1,6 +1,7 @@
 import React from 'react'
 import SocialMedia from './SocialMedia'
 import { motion, useScroll } from "framer-motion"
+import { TypeAnimation } from "react-type-animation";
 export default function HomeSection() {
     const phoneNumber = '082117933481';
     var message = 'Halo, Selamat';
@@ -21,7 +22,7 @@ export default function HomeSection() {
             <div className='home-left'>
                 <h2>Hi I am</h2>
                 <h1>Muhamad Arip Budiman</h1>
-                <h3>Fullstack Web Developer</h3>
+                <Profesi />
                 <p>Saya adalah web developer yang cekatan, disiplin dan bertanggung jawab dalam mengurus hal-hal yang berkaitan dengan web dan ilmu komputer lainnya.</p>
                 <motion.div
                     className="box"
@@ -40,3 +41,20 @@ export default function HomeSection() {
         </div >
     )
 }
+const Profesi = () => {
+    return (
+        <TypeAnimation
+            sequence={[
+                "Fullstack Web Developer",
+                1000,
+                "Freelancer",
+                1000,
+                "Part Time Developer",
+                1000,
+            ]}
+            speed={20}
+            className="lg:text-4xl text-2xl font-bold font-hammersmith text-washedBlack"
+            repeat={Infinity}
+        />
+    );
+};
