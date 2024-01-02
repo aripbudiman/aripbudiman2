@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import SocialMedia from './SocialMedia'
 import { motion, useScroll } from "framer-motion"
 import { TypeAnimation } from "react-type-animation";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function HomeSection() {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000
+        });
+    }, []);
     const phoneNumber = '082117933481';
     var message = 'Halo, Selamat';
     var currentTime = new Date().getHours();
@@ -19,7 +26,7 @@ export default function HomeSection() {
     var description = 'Muhamad Arip Budiman';
     return (
         <div id='home' className='bg-base-100 home'>
-            <div className='home-left'>
+            <div className='home-left' data-aos="fade-right">
                 <h2>Hi I am</h2>
                 <h1>Muhamad Arip Budiman</h1>
                 <Profesi />
@@ -35,7 +42,7 @@ export default function HomeSection() {
                     <SocialMedia />
                 </div>
             </div>
-            <div className='home-right'>
+            <div className='home-right' data-aos="fade-left">
                 <img src="arip.png" alt="aripbudiman.png" />
             </div>
         </div >

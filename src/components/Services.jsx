@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Icon } from '@iconify/react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import CardService from './atoms/CardService';
 export default function Services() {
+
     return (
         <div id='services' className='bg-base-100'>
             <h1>Services</h1>
