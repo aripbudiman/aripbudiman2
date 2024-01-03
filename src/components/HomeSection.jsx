@@ -10,7 +10,7 @@ export default function HomeSection() {
             duration: 1000
         });
     }, []);
-    const phoneNumber = '082117933481';
+    const phoneNumber = '+6282117933481';
     var message = 'Halo, Selamat';
     var currentTime = new Date().getHours();
     if (currentTime < 12) {
@@ -26,7 +26,7 @@ export default function HomeSection() {
     var description = 'Muhamad Arip Budiman';
     return (
         <div id='home' className='bg-base-100 home'>
-            <div className='home-left' data-aos="fade-right">
+            <div className='home-left' data-aos="fade-up">
                 <h2>Hi I am</h2>
                 <h1>Muhamad Arip Budiman</h1>
                 <Profesi />
@@ -36,13 +36,13 @@ export default function HomeSection() {
                     whileHover={{ scale: 1.1 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 >
-                    <a href={`https://api.whatsapp.com/send?phone= ${phoneNumber}&text=${encodedMessage} ${description}`} target='_blank' className='btn btn-warning mt-3 w-1/4'>Hire Me</a>
+                    <a href={`https://api.whatsapp.com/send?phone= ${phoneNumber}&text=${encodedMessage} ${description}`} target='_blank' className='btn btn-warning mt-3 xl:w-1/4 w-1/3'>Hire Me</a>
                 </motion.div>
-                <div className='my-7 w-1/2'>
+                <div className='my-7 max-w-full'>
                     <SocialMedia />
                 </div>
             </div>
-            <div className='home-right' data-aos="fade-left">
+            <div className='home-right' data-aos="fade-up">
                 <img src="arip.png" alt="aripbudiman.png" />
             </div>
         </div >

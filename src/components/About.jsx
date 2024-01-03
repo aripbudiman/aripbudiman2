@@ -10,10 +10,10 @@ export default function About() {
     }, []);
     return (
         <div id='about' className='about bg-base-100'>
-            <div className="left" data-aos="fade-right">
+            <div className="left" data-aos="fade-down">
                 <img src="arip2.png" alt="aripbudiman2.png" />
             </div>
-            <div className="right" data-aos="fade-left">
+            <div className="right" data-aos="fade-up">
                 <h1>About Me</h1>
                 <p className='mb-3'>Berikut beberapa skill yang dimiliki:</p>
                 <Progress value={78} label="Javascript" />

@@ -8,6 +8,9 @@
   @apply flex items-center justify-center flex-col-reverse xl:flex-row
 }
 
+[data-theme="cyberpunk"] #root{
+  @apply bg-[#fff248]
+}
 .home .home-left{
     @apply w-full px-5
   }

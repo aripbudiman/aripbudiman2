@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Icon } from '@iconify/react';
-
+import Swal from 'sweetalert2'
 export default function Contacts() {
     const [error, setError] = useState({
         fullname: "",
@@ -44,6 +44,11 @@ export default function Contacts() {
                 email: "",
                 subject: "",
                 message: ""
+            });
+            Swal.fire({
+                icon: 'success',
+                title: 'Success',
+                text: 'Your message has been sent',
             })
         });
     }
@@ -85,9 +90,9 @@ export default function Contacts() {
                         </label>
                         <label className="form-control w-full max-w-xs">
                             <div className="label">
-                                <span className="label-text font-semibold">EMAIL</span>
+                                <span className="label-text font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">EMAIL</span>
                             </div>
-                            <input name='email' value={messages.email} onChange={change} type="text" placeholder="Email" className={"input input-bordered w-full max-w-xs " + (error.email ? "input-error" : "")} />
+                            <input name='email' value={messages.email} onChange={change} type="email" placeholder="Email" className={"input input-bordered text-black invalid:text-red-500 w-full max-w-xs " + (error.email ? "input-error" : "")} />
                             <p className='text-error'>{error.email}</p>
                         </label>
                     </div>
@@ -134,7 +139,7 @@ export default function Contacts() {
 const GoogleMap = () => {
     return (
         <div>
-            <iframe className='xl:h-full h-64 w-full'
+            <iframe className='xl:h-full h-80 w-full'
                 title="Google Maps"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1176.6604282655676!2d107.8188789556241!3d-7.263798813414988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1704195969073!5m2!1sen!2sid"
                 style={{ border: '0' }}
