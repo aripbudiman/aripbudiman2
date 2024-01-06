@@ -17,14 +17,15 @@ function App() {
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
       />
+      <Navbar />
       <div className='app'>
-        <Navbar />
         <HomeSection />
         <About />
         <Services />
         <MyProject />
         <Certificate />
         <Contacts />
+
       </div>
       <Footer />
     </>

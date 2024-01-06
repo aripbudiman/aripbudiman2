@@ -10,7 +10,7 @@ export default function Navbar() {
     };
 
     return (
-        <div className="navbar bg-base-100 sticky top-0 z-50">
+        <div className="navbar max-w-5xl mx-auto border-b sticky z-30">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -25,13 +25,6 @@ export default function Navbar() {
             </div>
             <div className="navbar-end">
                 <button onClick={handleDownloadClick} className="btn">Download CV</button>
-                <div className="dropdown dropdown-bottom dropdown-end">
-                    <div tabIndex={0} role="button" className="btn m-1">Theme</div>
-                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Item 1</a></li>
-                        <li><a>Item 2</a></li>
-                    </ul>
-                </div>
             </div>
         </div>
     )

@@ -1,5 +1,5 @@
 .app{
-    @apply mx-auto w-full max-w-5xl bg-gray-200
+    @apply mx-auto w-full max-w-5xl bg-white
   }
 /* .home{
     @apply grid grid-cols-1 px-5 xl:grid-cols-2 content-center items-center gap-x-5 w-full
